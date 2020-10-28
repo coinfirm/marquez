@@ -15,6 +15,11 @@
 package marquez.common.models;
 
 public enum SourceType {
+  MAPRFS,
+  MAPRDB,
+  MAPRSTREAM,
+  MYSQLPROCEDURE,
+  HTTP,
   BIGQUERY,
   PULSAR,
   ORACLE,

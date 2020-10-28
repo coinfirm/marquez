@@ -8,14 +8,14 @@ server:
 
 db:
   driverClass: org.postgresql.Driver
-  url: jdbc:postgresql://postgres:5432/marquez
+  url: jdbc:postgresql://localhost:5432/marquez
   user: marquez
   password: marquez
 
 migrateOnStartup: true
 
 logging:
-  level: INFO
+  level: DEBUG
   appenders:
     - type: console
 
@@ -24,3 +24,5 @@ tags:
     description: Personally identifiable information
   - name: SENSITIVE
     description: Contains sensitive information
+  - name: DEV
+    description: DEV entity, use with caution
